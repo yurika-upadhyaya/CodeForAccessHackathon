@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     // Set the component to display by hard-coding the selection.
     // Choose one: 'ContrastToggle', 'FormValidation', 'KeyboardNav'
-    const selectedComponent = 'ContrastToggle'; // Change this to the desired component.
+    const selectedComponent = 'FormValidation'; // Change this to the desired component.
     setActiveComponent(selectedComponent);
   }, []);
 
