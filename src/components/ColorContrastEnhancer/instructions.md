@@ -24,7 +24,7 @@ Your task is to create a button that toggles between normal and high-contrast mo
    - **Step 3:** Test your implementation using a screen reader and ensure the button is keyboard accessible.
 
 5. **Testing Your Work:**
-   - Use accessibility testing tools like Chrome’s Lighthouse audit to check color contrast compliance.
+   - Use accessibility testing tools like [Chrome’s Lighthouse audit](https://developer.chrome.com/docs/lighthouse/overview#get-started) to check color contrast compliance.
    - Ensure that all functionality can be operated via keyboard controls.
 
 ## Tips and Hints
