@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install            # Installs all dependencies
+    build:
+      commands:
+        - npm run build          # Builds the React project
+  artifacts:
+    baseDirectory: build         # Specifies the directory containing the build output
+    files:
+      - '**/*'                   # Includes all files in the build directory
+  cache:
+    paths:
+      - node_modules/**/*        # Caches the node_modules directory for faster builds
