@@ -54,7 +54,7 @@ Each team will choose one of the following challenges:
      ```
    - Example:
      ```
-     git checkout -b team-1
+     git checkout -b team-shelley
      ```
 
 3. **Push Your Branch to GitHub:**
