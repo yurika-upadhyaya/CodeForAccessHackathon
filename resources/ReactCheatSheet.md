@@ -9,7 +9,7 @@ React is a popular JavaScript library for building user interfaces. This cheat s
 
 ### **Components**
 - Components are the building blocks of a React application. They can be functional or class-based.
-  ```javascript
+  ```
   function MyComponent() {
     return <h1>Hello, World!</h1>;
   }
@@ -17,13 +17,13 @@ React is a popular JavaScript library for building user interfaces. This cheat s
 
 ### **JSX**
 - JSX is a syntax extension that looks like HTML but is used in JavaScript. It allows you to write UI components in a declarative way.
-  ```javascript
+  ```
   const element = <h1>Hello, JSX!</h1>;
   ```
 
 ### **Props**
 - Props are used to pass data from parent to child components.
-  ```javascript
+  ```
   function Greeting(props) {
     return <h1>Hello, {props.name}!</h1>;
   }
@@ -31,7 +31,7 @@ React is a popular JavaScript library for building user interfaces. This cheat s
 
 ### **State**
 - State allows you to manage dynamic data in your components.
-  ```javascript
+  ```
   import React, { useState } from 'react';
 
   function Counter() {
@@ -42,7 +42,7 @@ React is a popular JavaScript library for building user interfaces. This cheat s
 
 ### **Event Handling**
 - Handle user interactions like clicks, form submissions, and input changes.
-  ```javascript
+  ```
   function handleClick() {
     alert('Button clicked!');
   }
@@ -50,7 +50,7 @@ React is a popular JavaScript library for building user interfaces. This cheat s
 
 ### **Effect Hook**
 - The `useEffect` hook lets you perform side effects like data fetching or subscribing to events in functional components.
-  ```javascript
+  ```
   import React, { useEffect } from 'react';
 
   function ExampleComponent() {
@@ -64,7 +64,7 @@ React is a popular JavaScript library for building user interfaces. This cheat s
 
 ### **Conditional Rendering**
 - Render elements based on conditions using logical operators or ternary expressions.
-  ```javascript
+  ```
   function Greeting(props) {
     return props.isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please sign in.</h1>;
   }
@@ -72,7 +72,7 @@ React is a popular JavaScript library for building user interfaces. This cheat s
 
 ### **Forms and Controlled Components**
 - Handle form inputs using state to keep the UI and the data in sync.
-  ```javascript
+  ```
   function Form() {
     const [value, setValue] = useState('');
 

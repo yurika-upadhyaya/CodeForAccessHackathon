@@ -1,0 +1,21 @@
+{
+  "name": "codeforaccesshackathon",
+  "version": "1.0.0",
+  "description": "Welcome to the Code for Access: The Accessibility Challenge hackathon repository! This repository is designed to support participants as they work on accessibility-focused coding challenges using HTML, CSS, JavaScript, and React. Whether you're a beginner or an experienced developer, this space provides all the resources, guides, and starter code you need to participate successfully.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

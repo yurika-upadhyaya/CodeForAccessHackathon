@@ -49,17 +49,17 @@ Each team will choose one of the following challenges:
 2. **Create Your Branch in Codespaces:**
    - Once inside your Codespace, open the terminal.
    - Create a new branch specific to your team:
-     ```bash
+     ```
      git checkout -b team-name
      ```
    - Example:
-     ```bash
+     ```
      git checkout -b team-1
      ```
 
 3. **Push Your Branch to GitHub:**
    - Once your branch is created, push it to GitHub to trigger AWS Amplify to recognize your branch for deployment:
-     ```bash
+     ```
      git push origin your-branch-name
      ```
 
@@ -72,7 +72,7 @@ Each team will choose one of the following challenges:
 ### **3. Commit and Push Your Changes Regularly**
 
 - As you work on your code, make sure to regularly commit and push your changes to keep your branch updated:
-  ```bash
+  ```
   git add .
   git commit -m "Describe your changes here"
   git push origin your-branch-name

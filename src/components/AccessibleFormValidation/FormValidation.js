@@ -1,29 +1,54 @@
+// FormValidation.js
+// Challenge: Accessible Form Validation
+// Objective: Create a simple form with real-time, accessible error messaging. Ensure error messages are clear, descriptive, screen-reader friendly, and visually displayed without relying solely on color.
+
 import React, { useState } from 'react';
 
 function FormValidation() {
+  // State to manage input value and error message
   const [inputValue, setInputValue] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  // Handle input changes
   const handleChange = (e) => {
     setInputValue(e.target.value);
+    // Clear error when the user starts typing
+    if (errorMessage) {
+      setErrorMessage('');
+    }
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue === '') {
+    // TODO: Implement validation logic to check if input is empty
+    if (inputValue.trim() === '') {
       setErrorMessage('This field is required.');
     } else {
       setErrorMessage('');
-      // TODO: Implement form submission logic
+      // TODO: Implement form submission logic or further processing
+      alert('Form submitted successfully!');
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="inputField">Enter text:</label>
-      <input id="inputField" type="text" value={inputValue} onChange={handleChange} />
+      <input
+        id="inputField"
+        type="text"
+        value={inputValue}
+        onChange={handleChange}
+        aria-invalid={!!errorMessage} // Indicates invalid state to screen readers
+        aria-describedby="error-message" // Links input to error message for screen readers
+      />
       <button type="submit">Submit</button>
-      {errorMessage && <span role="alert" style={{ color: 'red' }}>{errorMessage}</span>}
+      {/* TODO: Ensure error message is accessible and announced by screen readers */}
+      {errorMessage && (
+        <span id="error-message" role="alert" style={{ color: 'red' }}>
+          {errorMessage}
+        </span>
+      )}
     </form>
   );
 }

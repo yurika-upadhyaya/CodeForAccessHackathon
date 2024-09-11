@@ -36,7 +36,7 @@ Accessibility is crucial in creating inclusive web applications that everyone ca
 
 ## Tools and Resources
 
-- **Lighthouse Audit**: Use Chrome’s built-in Lighthouse audit to test your app’s accessibility.
+- **[Lighthouse Audit]((https://developer.chrome.com/docs/lighthouse/overview#get-started))**: Use Chrome’s built-in Lighthouse audit to test your app’s accessibility.
 - **Screen Readers**: Test your features with screen readers such as NVDA (Windows) or VoiceOver (Mac).
 - **WebAIM Contrast Checker**: [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) for testing color contrast ratios.
 
