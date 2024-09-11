@@ -21,20 +21,53 @@ Each team will choose one of the following challenges:
 
 ## **Repository Structure**
 
-- **/README.md**  
-  The main resource for the hackathon, providing an overview, instructions, and links to additional guides.
-
-- **/color-contrast-enhancer**  
-  Contains starter code, instructions, and resources specific to the Color Contrast Enhancer challenge.
-
-- **/accessible-form-validation**  
-  Contains starter code, instructions, and resources specific to the Accessible Form Validation challenge.
-
-- **/keyboard-friendly-navigation**  
-  Contains starter code, instructions, and resources specific to the Keyboard-Friendly Navigation challenge.
+- **/public**  
+  Contains public files, including `index.html`, which serves as the entry point for the application.
 
 - **/resources**  
-  A collection of guides on HTML, CSS, JavaScript, React basics, Git workflow, accessibility principles, and AWS Amplify deployment instructions.
+  Includes the following guides to assist participants:
+  - **AccessibilityGuide.md**: Key accessibility principles and tips for each challenge.
+  - **GitGuide.md**: Essential Git commands to manage branches and push code.
+  - **ReactCheatSheet.md**: Quick reference for basic React concepts.
+
+- **/src**  
+  The main source folder containing all components and styling files:
+  
+  - **/components**  
+    - **/AccessibleFormValidation**  
+      - **FormValidation.js**: Starter code for the Accessible Form Validation challenge.
+      - **instructions.md**: Instructions specific to this challenge.
+
+    - **/ColorContrastEnhancer**  
+      - **ContrastToggle.js**: Starter code for the Color Contrast Enhancer challenge.
+      - **instructions.md**: Instructions specific to this challenge.
+
+    - **/KeyboardFriendlyNavigation**  
+      - **KeyboardNav.js**: Starter code for the Keyboard-Friendly Navigation challenge.
+      - **instructions.md**: Instructions specific to this challenge.
+
+- **/css**  
+  Contains CSS files for general styling and specific component styles:
+  - **App.css**: Styles for the main application.
+  - **index.css**: Basic and accessibility-focused styles.
+
+- **App.js**  
+  The main application file, which includes the layout and rendering logic.
+
+- **index.js**  
+  The entry point for rendering the React application.
+
+- **.gitignore**  
+  Specifies files and folders to be ignored by Git, such as node_modules and build outputs.
+
+- **README.md**  
+  The main documentation file with the overview, instructions, and checklist for the hackathon.
+
+- **amplify.yml**  
+  Configuration file for AWS Amplify to automate deployments for each branch.
+
+- **package.json & package-lock.json**  
+  Lists project dependencies and scripts used to run, build, and manage the application.
 
 ## **Getting Started**
 
@@ -82,6 +115,29 @@ Each team will choose one of the following challenges:
 
 - AWS Amplify will automatically generate a live deployment link for your branch once it's pushed to GitHub. You will receive your unique URL from the event coordinator shortly after pushing your branch.
 - Use this link to view your work live and prepare for your demonstration.
+
+## **TODO Checklist**
+
+Below is a checklist of all the files containing `TODOs` that you need to address during the hackathon. Use this list to ensure you complete all required tasks:
+
+- **/color-contrast-enhancer/ContrastToggle.js**
+  - [ ] Implement the high-contrast mode toggling logic.
+  - [ ] Ensure button accessibility with ARIA attributes.
+  - [ ] Test with a screen reader for accessibility compliance.
+
+- **/accessible-form-validation/FormValidation.js**
+  - [ ] Add screen-reader-friendly error messaging using ARIA attributes.
+  - [ ] Style error messages to be visually distinct without relying solely on color.
+  - [ ] Test the form for keyboard accessibility and screen reader support.
+
+- **/keyboard-friendly-navigation/KeyboardNav.js**
+  - [ ] Implement keyboard event handlers to support navigation with Enter and Arrow keys.
+  - [ ] Style focus states for all navigable elements to make them visible.
+  - [ ] Ensure full keyboard functionality of the navigation menu.
+
+- **/css/index.css**
+  - [ ] Add styles for high-contrast mode to improve readability.
+  - [ ] Style error messages for forms to be accessible and screen reader-friendly.
 
 ## **Resources**
 
