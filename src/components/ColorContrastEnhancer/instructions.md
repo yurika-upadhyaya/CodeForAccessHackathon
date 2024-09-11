@@ -6,24 +6,30 @@ Your task is to create a button that toggles between normal and high-contrast mo
 
 ## Getting Started
 
-1. **Open the Starter Code:**
+1. **Install Dependencies:**
+   - Open your terminal and run the following command in the project root to install all necessary dependencies:
+   ```
+   npm install
+   ```
+   
+2. **Open the Starter Code:**
    - Navigate to the `ContrastToggle.js` file in this folder.
 
-2. **Understand the Current Setup:**
+3. **Understand the Current Setup:**
    - The starter code includes a basic button and a text section that changes its background and text color based on the `highContrast` state.
 
-3. **Your Task:**
+4. **Your Task:**
    - Enhance the current implementation to meet the following criteria:
      - Adjust colors to ensure high contrast that meets accessibility standards.
      - Update the button text or appearance to indicate which mode is active.
      - Ensure that the feature is keyboard accessible (e.g., users can toggle using the Enter key).
 
-4. **Steps to Complete:**
+5. **Steps to Complete:**
    - **Step 1:** Update the color values inside the `toggleContrast` function to ensure high-contrast colors meet WCAG standards.
    - **Step 2:** Add ARIA attributes or visually hidden text to make the button accessible for screen readers.
    - **Step 3:** Test your implementation using a screen reader and ensure the button is keyboard accessible.
 
-5. **Testing Your Work:**
+6. **Testing Your Work:**
    - Use accessibility testing tools like [Chrome’s Lighthouse audit](https://developer.chrome.com/docs/lighthouse/overview#get-started) to check color contrast compliance.
    - Ensure that all functionality can be operated via keyboard controls.
 
