@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ContrastToggle from './components/ColorContrastEnhancer/ContrastToggle';
 import FormValidation from './components/AccessibleFormValidation/FormValidation';
 import KeyboardNav from './components/KeyboardFriendlyNavigation/KeyboardNav';
-import './App.css'; // Optional: Add global styles here
+import './css/App.css'; // Optional: Add global styles here
 
 function App() {
   // State to track which component is selected
